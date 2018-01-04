@@ -7,7 +7,23 @@ In the screenshots bellow you can see this displays the most demanding process, 
 
 # Installation
 ```
+git clone https://github.com/RaitaroH/Conky-Breeze.git ~/.conky/
+```
+After this simply choose the themes in conky manager.
 
+```
+sudo add-apt-repository ppa:teejee2008/ppa -y
+sudo apt-get update
+sudo apt-get install conky-manager -y
+```
+Also you will need to add sensors, for the temperateures to be showned.
+```
+sudo apt-get install sensors -y
 ```
 
 # Screenshots
+GothamDarkKDE better for dark wallpapers:
+![alt-tag](https://raw.githubusercontent.com/RaitaroH/Conky-Breeze/master/GothamKDE/GothamDarkKDE.png)
+
+GothamLightKDE better for white wallpapers:
+![alt-tag](https://raw.githubusercontent.com/RaitaroH/Conky-Breeze/master/GothamKDE/GothamLightKDE.png)
