@@ -1,0 +1,49 @@
+# Original theme: Gotham
+# Edited by: RaitaroH
+# Page: https://github.com/RaitaroH/Conky-Breeze
+
+use_xft yes
+xftfont 123:size=8
+xftalpha 0.1
+update_interval 1
+total_run_times 0
+
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 0
+
+double_buffer yes
+#minimum_size 250 5
+#maximum_width 500
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color EAEAEA
+default_shade_color black
+default_outline_color black
+alignment bottom_left
+gap_x 15
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 8
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+temperature_unit celsius
+
+#Default colors:
+#White text: EAEAEA
+#Colored text: 3DAEE9
+
+minimum_size 0 0
+own_window_colour 000000
+TEXT
+${voffset -10}${color EAEAEA}${font GE Inspira:pixelsize=100}${time %H:%M:%S}${font}${voffset -70}${offset 10}${color 3DAEE9}${font GE Inspira:pixelsize=40}${time %d} ${voffset 0}${color EAEAEA}${font GE Inspira:pixelsize=35}${time  %B} ${time %Y}${font}${voffset 20}${font GE Inspira:pixelsize=40}${offset -257}${time %A}${font}
+${voffset 4}${offset 5}${font Ubuntu:pixelsize=20}${color 3DAEE9}PRC  $color${top name 1}${offset -18}${top cpu 1}${offset 10}${color 3DAEE9}RAM  $color$mem/$memmax${offset 10}${color 3DAEE9}CPU  $color${cpu cpu0}%${offset 10}${color 3DAEE9}${font Monospace:pixelsize=23}▼ ${font Ubuntu:pixelsize=20}$color${if_up wlp3s0}${downspeed wlp3s0}-> ${totaldown wlp3s0} ${else}${downspeed wlp3s0}-> ${totaldown wlp3s0} ${endif}${offset 10}${color 3DAEE9}T  $color${exec sensors | grep CPU | grep -o +"[0-9].*"} &  $color${exec sensors | grep SODIMM | grep -o +"[0-9].*"}
+
+# in case the download speed is not working see: https://wiki.manjaro.org/index.php?title=Basic_Tips_for_conky#Missing_network_information
