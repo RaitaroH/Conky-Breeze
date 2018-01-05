@@ -7,9 +7,9 @@ In the screenshots bellow you can see this displays the most demanding process, 
 
 # Installation
 ```
-git clone https://github.com/RaitaroH/Conky-Breeze.git ~/.conky/
+git clone https://github.com/RaitaroH/Conky-Breeze.git
 ```
-After this simply choose the themes in conky manager.
+After this simply move the theme and it's screenshot to ` ~/.conky/` and choose the themes in conky manager.
 
 ```
 sudo add-apt-repository ppa:teejee2008/ppa -y
