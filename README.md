@@ -5,21 +5,24 @@ I also changed the colors so it works with the Breeze Themes.
 
 In the screenshots bellow you can see this displays the most demanding process, the RAM used, the CPU used, downloaded data and also the temperatures for the CPU and GPU.
 
+# Dependencies
+You will need conky(duh), sensors (for the temps), acpi (for the battery) and [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack).
+
+```
+sudo add-apt-repository ppa:teejee2008/ppa -y
+sudo apt-get update
+sudo apt-get install conky-manager -y
+
+sudo apt-get install sensors -y
+sudo apt-get install acpi -y
+```
+
 # Installation
 ```
 git clone https://github.com/RaitaroH/Conky-Breeze.git
 ```
 After this simply move the theme and it's screenshot to ` ~/.conky/` and choose the themes in conky manager.
 
-```
-sudo add-apt-repository ppa:teejee2008/ppa -y
-sudo apt-get update
-sudo apt-get install conky-manager -y
-```
-Also you will need to add sensors, for the temperateures to be showned.
-```
-sudo apt-get install sensors -y
-```
 
 # Screenshots
 GothamDarkKDE better for dark wallpapers:
