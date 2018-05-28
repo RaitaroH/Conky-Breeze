@@ -19,9 +19,10 @@ sudo apt-get install acpi -y
 
 # Installation
 ```
+cd ~/.conky/
 git clone https://github.com/RaitaroH/Conky-Breeze.git
 ```
-After this simply move the theme and it's screenshot to ` ~/.conky/` and choose the themes in conky manager.
+After this simply choose the themes in conky manager.
 
 
 # Screenshots
