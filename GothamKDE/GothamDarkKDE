@@ -23,6 +23,7 @@ draw_outline no
 draw_borders no
 draw_graph_borders no
 default_color EAEAEA
+color1 3DAEE9
 default_shade_color black
 default_outline_color black
 alignment bottom_left
@@ -36,30 +37,26 @@ override_utf8_locale yes
 use_spacer yes
 temperature_unit celsius
 
-#Default colors:
-#White text: EAEAEA
-#Colored text: 3DAEE9
-
 
 minimum_size 0 0
 own_window_colour 000000
 TEXT
-${voffset 0}${color EAEAEA}${font GE Inspira:pixelsize=100}${time %H:%M:%S}\
-${font}${voffset -70}${offset 10}${color 3DAEE9}${font GE Inspira:pixelsize=40}${time %d} \
-${voffset 0}${color EAEAEA}${font GE Inspira:pixelsize=35}${time  %B} ${time %Y}\
+${voffset 0}${color}${font GE Inspira:pixelsize=100}${time %H:%M:%S}\
+${font}${voffset -70}${offset 10}${color1}${font GE Inspira:pixelsize=40}${time %d} \
+${voffset 0}${color}${font GE Inspira:pixelsize=35}${time  %B} ${time %Y}\
 ${font}${voffset 20}${font GE Inspira:pixelsize=40}${offset -200}${time %A}${font}
 # Most used process
-${voffset 15}${offset 15}${color 3DAEE9}${font Hack Nerd Font:pixelsize=23}ﴞ ${font Ubuntu:pixelsize=20}$color${top name 1}${offset -15}${top cpu 1}\
+${voffset 15}${offset 15}${color1}${font Hack Nerd Font:pixelsize=23}ﴞ ${font Ubuntu:pixelsize=20}$color${top name 1}${offset -35}${top cpu 1}\
 # Ram
-${voffset 0}${offset 10}${color 3DAEE9}${font Hack Nerd Font:pixelsize=23}力 ${font Ubuntu:pixelsize=20}$color$mem/$memmax\
+${voffset 0}${offset 10}${color1}${font Hack Nerd Font:pixelsize=23}力 ${font Ubuntu:pixelsize=20}$color$mem/$memmax\
 # Cpu usage
-${voffset -2}${offset 10}${color 3DAEE9}${font Hack Nerd Font:pixelsize=23}礪 ${font Ubuntu:pixelsize=20}$color${cpu cpu0}%\
+${voffset -2}${offset 10}${color1}${font Hack Nerd Font:pixelsize=23}礪 ${font Ubuntu:pixelsize=20}$color${cpu cpu0}%\
 # The internet download and how much since boot up
-${voffset -3}${offset 10}${color 3DAEE9}${font Hack Nerd Font:pixelsize=23} ${font Ubuntu:pixelsize=20}$color${if_up wlp3s0}${downspeed wlp3s0}-> ${totaldown wlp3s0} ${else}${downspeed wlp3s0}-> ${totaldown wlp3s0} ${endif}\
+${voffset -3}${offset 10}${color1}${font Hack Nerd Font:pixelsize=23} ${font Ubuntu:pixelsize=20}$color${if_up wlp3s0}${downspeed wlp3s0}-> ${totaldown wlp3s0} ${else}${downspeed wlp3s0}-> ${totaldown wlp3s0} ${endif}\
 # Battery procentage
-${voffset -1}${offset 10}${color 3DAEE9}${font Hack Nerd Font:pixelsize=23} ${font Ubuntu:pixelsize=20}$color${exec acpi | cut -d " " -f3-5 | cut -d "," -f2}\
+${voffset -1}${offset 10}${color1}${font Hack Nerd Font:pixelsize=23} ${font Ubuntu:pixelsize=20}$color${exec acpi | cut -d " " -f3-5 | cut -d "," -f2}\
 # Temperatures of cpu and gpu
-${voffset -1}${offset 10}${color 3DAEE9}${font Hack Nerd Font:pixelsize=23}﨎 ${font Ubuntu:pixelsize=20}$color${exec sensors | grep CPU | grep -o +"[0-9].*"} &  $color${exec sensors | grep SODIMM | grep -o +"[0-9].*"}
+${voffset -1}${offset 10}${color1}${font Hack Nerd Font:pixelsize=23}﨎 ${font Ubuntu:pixelsize=20}$color${exec sensors | grep CPU | grep -o +"[0-9].*"} &  $color${exec sensors | grep SODIMM | grep -o +"[0-9].*"}
 
 # Example unicode char from Hack Nerd Font:    直   﨎 ﴞ ﱨ 礪 力
 
