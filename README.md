@@ -24,6 +24,7 @@ git clone https://github.com/RaitaroH/Conky-Breeze.git
 ```
 After this simply choose the themes in conky manager.
 
+If you want, you can use the script I provide to change between dark and light. Simply put the script in your bin, bind it to some keyboard shortcut. Make sure you edit the location of the conky file itself and you are set.
 
 # Screenshots
 GothamDarkKDE better for dark wallpapers:
