@@ -11,10 +11,9 @@ You will need conky(duh), sensors (for the temps), acpi (for the battery) and [H
 ```
 sudo add-apt-repository ppa:teejee2008/ppa -y
 sudo apt-get update
-sudo apt-get install conky-manager -y
+sudo apt-get install -y conky-manager
 
-sudo apt-get install sensors -y
-sudo apt-get install acpi -y
+sudo apt-get install -y lm-sensors acpi 
 ```
 
 # Installation
