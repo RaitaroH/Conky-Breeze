@@ -19,7 +19,7 @@ sudo apt-get install -y lm-sensors acpi
 # Installation
 ```
 cd ~/.conky/
-git clone https://github.com/RaitaroH/Conky-Breeze.git
+git clone https://gitlab.com/RaitaroH/Conky-Breeze.git
 ```
 After this simply choose the themes in conky manager.
 
@@ -27,7 +27,7 @@ If you want, you can use the script I provide to change between dark and light. 
 
 # Screenshots
 GothamDarkKDE better for dark wallpapers:
-![alt-tag](https://raw.githubusercontent.com/RaitaroH/Conky-Breeze/master/GothamKDE/GothamDarkKDE.png)
+![alt-tag](https://gitlab.com/RaitaroH/Conky-Breeze/master/GothamKDE/GothamDarkKDE.png)
 
 GothamLightKDE better for white wallpapers:
-![alt-tag](https://raw.githubusercontent.com/RaitaroH/Conky-Breeze/master/GothamKDE/GothamLightKDE.png)
+![alt-tag](https://gitlab.com/RaitaroH/Conky-Breeze/master/GothamKDE/GothamLightKDE.png)
