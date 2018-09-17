@@ -1,0 +1,16 @@
+#!/bin/bash
+
+process_id=$(pidof conky)
+if [[ -z $process_id ]]; then
+    sh .conky/conky-startup.sh & 2>/dev/null
+fi
+
+file="/home/raitaro/.conky/MyConky/GothamDarkKDE"
+var=`cat $file | grep "EAEAEA"`
+if [[ $var != "" ]]; then
+    echo "Making dark"
+    sed -i -- "s/default_color\ EAEAEA/default_color\ 31363b/g" $file
+else
+    echo "Making white"
+    sed -i -- "s/default_color\ 31363b/default_color\ EAEAEA/g" $file
+fi
